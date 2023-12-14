@@ -5,6 +5,10 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  safelist: {
+    deep: [/^bg-gradient-to-r/, /^from-[a-z]+-400/, /^to-[a-z]+-700/],
+    greedy: [],
+  },
   theme: {
     extend: {
       backgroundImage: {
